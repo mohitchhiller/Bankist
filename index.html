@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;600;700;800;900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <nav id="navbar">
+        <div class="user-welcome">Log in to get started</div>
+        <div class="logo">
+            <img src="logo.png" alt="">
+        </div>
+        <div class="user-input">
+            <form action="">
+                <input type="text" id="user-name" maxlength="4" placeholder="USER">
+                <input type="password" name="" id="user-pin" maxlength="4" placeholder="PIN">
+                <button class="login-button">&rarr;</button>
+            </form>
+        </div>
+    </nav>
+    <div class="bank-logo">
+        <img src="../11-Arrays-Bankist/starter/logobig.png" alt="">
+        <span> BANKIST</span>
+    </div>
+    <main id="app">
+        <div class="app-header">
+            <div class="current-balance-heading">
+                <h2>Current balance</h2>
+                <p> As of <span class="date">05/03/2037</span></p>
+            </div>
+            <div class="current-balance">
+                0000$
+            </div>
+        </div>
+        <div class="app-content">
+            <div class="movements">
+                <div class="movements-row">
+                    <div class="movement-type deposit">DEPOSIT</div>
+                    <div class="movement-date">3 days ago</div>
+                    <div class="movement-value">4000$</div>
+                </div>
+                <div class="movements-row">
+                    <div class="movement-type withdrawl">WITHDRAWL</div>
+                    <div class="movement-date">25/02/2037</div>
+                    <div class="movement-value">-200$</div>
+                </div>
+
+            </div>
+            <div class="transfers">
+                <div class="transfer">
+                    <div class="transfer-heading">
+                        TRANSFER MONEY
+                    </div>
+                    <div class="transfer-fields">
+                        <input type="text" class="transfer-to">
+                        <input type="number" class="transfer-amount">
+                        <button type="submit" class="transfer-btn">&rarr;</button>
+                        <label class="form-labels">Transfer To </label>
+                        <label class="form-labels">Amount</label>
+                    </div>
+                </div>
+                <div class="request">
+                    <div class="request-heading">
+                        Request Loan
+                    </div>
+                    <div class="request-fields">
+                        <input type="number" class="request-amount">
+                        <button type="submit" class="request-btn">&rarr;</button>
+                        <span></span>
+                        <label class="form-labels">Amount</label>
+
+                    </div>
+
+                </div>
+                <div class="close">
+                    <div class="close-heading">
+                        Close Account
+                    </div>
+                    <div class="close-fields">
+                        <input type="text" maxlength="4" class="user-confirm">
+                        <input type="number" maxlength="4" class="user-pin-confirm">
+                        <button type="submit" class="close-btn">&rarr;</button>
+                        <label class="form-labels">Confirm User</label>
+                        <label class="form-labels">Confirm Pin</label>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="summary">
+            <div class="summary-account">
+                <div class="input">
+                    IN <span class="credit-amount">0000$</span>
+                </div>
+                <div class="output">
+                    OUT <span class="debit-amount">0000$</span>
+                </div>
+                <div class="interest">
+                    INTEREST <span class="interest-amount">0000$</span>
+                </div>
+            </div>
+            <div class="sort">sort&darr;</div>
+            <div class="summary-session">
+                You Will be logged out in <span class="timer"> 05:00</span>
+            </div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
